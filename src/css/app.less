@@ -1,0 +1,96 @@
+:root {
+    --font-sans : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-mono : "Andale Mono", "Monaco", "Lucida Console", "Menlo", "Consolas", "Roboto Mono", "Liberation Mono", monospace;
+
+    --color-bg : #111;
+    --color-fg : #ccc;
+}
+
+html, body, canvas, button, h3 {
+    margin: 0;
+    padding: 0;
+}    
+html {
+    line-height: 1;
+	text-size-adjust: 100%;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	word-break: break-word;
+    cursor: default;    
+    background: var(--color-bg);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+main {
+    font-family: var(--font-mono);
+    font-size: 1.3em;
+    line-height: 1.6;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 78rem;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	background-repeat: no-repeat;
+}
+
+/* ~~~~~~~~~~ */
+
+h3 {
+    font-size: 100%;
+    line-height: 1;
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: dotted #555 1px;
+}
+canvas {
+    flex: 0 0 auto;
+    margin: 0 auto;
+    width: 100% !important;
+    height: auto !important;
+}
+#selector {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
+    flex: 1 1 auto;
+    align-self: center;
+}
+button {
+    font: inherit;
+	color: inherit;
+    text-transform: none;
+    width: 100%;
+    font-size: 1.2rem;
+    appearance: none;
+    background: var(--color-bg);
+    color: #777;
+    border: none;
+    border-bottom: dotted #555 1px;
+    display: inline-block;
+    vertical-align: top;
+    padding: .35rem 0;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    &:focus {
+        outline: none;
+        color: var(--color-fg);
+    }
+    &.active {
+        border-bottom: solid #fff 1px;
+        color: #fff;
+    }
+}
