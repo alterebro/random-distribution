@@ -1,0 +1,34 @@
+{
+  "name": "random-distribution",
+  "version": "1.0.0",
+  "description": "A random distribution visualizer",
+  "main": "src/index.html",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "clear": "rm -rf dist; rm -rf .parcel-cache",
+    "build": "npm run clear && parcel build src/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "visualizer",
+    "p5js",
+    "processing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterebro/random-distribution.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alterebro/random-distribution/issues"
+  },
+  "homepage": "https://github.com/alterebro/random-distribution#readme",
+  "author": "Jorge Moreno (@alterebro)",
+  "license": "MIT",
+  "devDependencies": {
+    "p5": "^1.9.0",
+    "parcel": "^2.11.0"
+  }
+}
