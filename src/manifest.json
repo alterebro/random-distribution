@@ -1,0 +1,9 @@
+{
+    "name": "Random() Dsitribution Visualizer",
+    "short_name": "random-distribution",
+    "lang": "en-US",
+    "start_url": "/index.html?launcher=true",
+    "display": "fullscreen",
+    "orientation": "any",
+    "theme_color": "#171717"
+  }
