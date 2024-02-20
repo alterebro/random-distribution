@@ -5,10 +5,9 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html",
-    "clear": "rm -rf dist; rm -rf .parcel-cache; rm -rf docs",
-    "build": "rm -rf docs && parcel build src/index.html --dist-dir docs --public-url ./ --no-source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html --dist-dir cache",
+    "clear": "rm -rf dist; rm -rf .parcel-cache; rm -rf cache",
+    "build": "rm -rf dist && parcel build src/index.html --dist-dir dist --public-url ./ --no-source-maps"
   },
   "keywords": [
     "random",
